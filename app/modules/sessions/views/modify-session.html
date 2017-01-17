@@ -1,0 +1,58 @@
+<section class="create-session" ng-controller='ModifySessionCtrl' ng-init="candidateDetails = ngDialogData">
+    <h2 class="session-form-heading">Modify Session</h2>
+
+    <form name="session-form" id="session-form" class="session-form" method="POST" novalidate
+          ng-submit='modifySession()'>
+
+        <div class="row">
+            <div>
+                <label for="candidate-name">Candidate Name</label>
+
+
+                <input type="text" required id="candidate-name" name="candidateName"
+                       ng-model="ngDialogData.candidateName" value="{{ngDialogData.candidateName}}"/>
+
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" required id="email" name="email" ng-model="ngDialogData.email"
+                       value="{{ngDialogData.email}}"/>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" required id="phone" name="phone" ng-model="ngDialogData.phone" maxlength="10"
+                       value="{{ngDialogData.phone}}"/>
+
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <select name="title" id="title" value="seniorAssociate">
+                    <option value="associate">Associate</option>
+                    <option value="seniorAssociate">Senior Associate</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label for="career-stage">Career Stage</label>
+                <select name="career-stage" id="career-stage">
+                    <option value="l1" ng-model="ngDialogData.appliedFor">{{ngDialogData.appliedFor}}</option>
+                </select>
+                <label for="send-date">Schedule to send</label>
+                <input type="date" id="send-date" name="sendDate" value="{{ngDialogData.sendDate}}"/>
+            </div>
+            <div>
+                <label for="experience-year">Years of Experience</label>
+                <input type="number" required id="experience-year" value="{{ngDialogData.years}}" min="1" max="15"/>
+            </div>
+        </div>
+
+        <div>
+            <button type="submit" ng-disabled="sessionForm.$invalid" id="session-submit" class="btn btn-primary"
+                    value="SUBMIT">SUBMIT
+            </button>
+        </div>
+    </form>
+</section>

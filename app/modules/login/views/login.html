@@ -1,0 +1,28 @@
+<main class="login" ng-controller='LoginCtrl'>
+    <form method="POST" name="loginForm" id="hireBuddy-login" novalidate ng-submit="login()">
+        <fieldset>
+            <legend>Login</legend>
+            <div class="alert alert-danger" ng-hide="loginSuccess">
+                Wrong Credentials
+            </div>
+            <div>
+                <label class="hide-label" for="username">User Name</label>
+                <span class="nitro-icon-sprite icon-vector-smart-object-user"></span>
+                <input type="text" name="username" id="username" placeholder="User Name" 
+                 size="45" tabindex="1" ng-model="username" required/>
+            </div>
+            <div class='password'>
+                <label class="hide-label" for="password">Password</label>
+                <span class="nitro-icon-sprite icon-vector-smart-object-password"></span>
+                <i  ng-click='showPassword = true' ng-show='showPassword === false' class="fa fa-eye"></i>
+                <i  ng-click='showPassword = false' ng-show='showPassword === true' class="fa fa-eye-slash"></i>
+            <input type="{{ (showPassword)  ? 'text' : 'password'}}"  name="password" id="password" placeholder="Password" size="45" tabindex="2"  ng-model="password" required /> 
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="rememberMe" ng-click="rememberMe=true" tabindex="3" />
+                <label for="rememberMe">Remember me</label>
+            </div>
+            <input type="submit" id="submit" value="LOGIN" ng-disabled="loginForm.$invalid" />
+        </fieldset>
+    </form>
+</main>

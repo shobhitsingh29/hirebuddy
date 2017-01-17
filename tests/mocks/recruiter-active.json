@@ -1,0 +1,18 @@
+{
+  "recruiterData": [
+    {
+      "isActive": true,
+      "oracleId": 117409,
+      "recruiterName": "Rahul Kumar",
+      "phoneNo": "9790727248",
+      "designation": "SAL1",
+      "addedBy": "Admin1",
+      "addedOn": "11/11/2016",
+      "sessionsCreated": "50",
+      "sessionsAttend": "10",
+      "candidatesPassed": "20",
+      "candidatesFailed": "20",
+      "id": 0
+    }
+  ]
+}

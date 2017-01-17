@@ -1,0 +1,82 @@
+.custom-width-1{
+    @extend .col-md-1;
+    width:7%;
+}
+.width-1{
+    @extend .col-md-1;
+}
+.width-2{
+     @extend .col-md-2;
+}
+.custom-width-2{
+     @extend .col-md-1;
+    width:11%;
+}
+ 
+#table-container {
+     overflow-x : auto;
+     width:100%;
+     margin-top: 10px;
+}
+ 
+table {
+    width: 1110px;
+    thead {
+        tr {
+                background: -webkit-linear-gradient($nitro-base-dark-blue-color,$nitro-base-light-blue-color);
+                background: -o-linear-gradient($nitro-base-dark-blue-color,$nitro-base-light-blue-color);
+                background: -moz-linear-gradient($nitro-base-dark-blue-color,$nitro-base-light-blue-color);
+                background: linear-gradient( $nitro-base-light-blue-color,$nitro-base-dark-blue-color);
+ 
+ 
+            th {
+ 
+                color: $nitro-base-white-color;
+                text-align: center;
+                border-right:1px solid $nitro-base-dark-blue-color;
+                padding-top: 10px;
+                padding-bottom: 20px;
+ 
+            }
+                th:first-child{
+                    border-top-left-radius: 5px;
+                }
+                th:last-child{
+                    border-top-right-radius: 5px;
+                }
+ 
+ 
+            :last-child{
+                border-right:0;
+ 
+            }
+ 
+        }
+    }
+    tbody {
+        tr{
+            border-bottom : 1px solid $nitro-base-bottom-color;
+            td{
+                text-align: center;
+                padding-bottom: 15px;
+                padding-top: 30px;
+                 &.live{
+                color: green;
+                }
+                &.pending{
+                color: $nitro-base-red-color;
+                }
+                
+                }
+               
+                
+            }
+            tr:nth-child(odd) {
+            background-color:$nitro-base-white-color;
+            }
+ 
+            tr:nth-child(even) {
+            background-color:$nitro-base-lightgrey-color;
+            }
+        }
+}

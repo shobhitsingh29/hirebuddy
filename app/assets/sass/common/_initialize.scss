@@ -1,0 +1,149 @@
+/*Breakpoints
+=============================================================================*/
+@mixin mobile-only {
+	@media (max-width : $screen-phone) {
+		@content;
+	}
+}
+@mixin tablet-only {
+	@media only screen and (min-width : $screen-phone + 1) and (max-width : $screen-tablet) {
+		@content;
+	}
+}
+@mixin tablet-and-up {
+	@media only screen and (min-width : $screen-phone +1) {
+		@content;
+	}
+}
+@mixin desktop-only {
+	@media only screen and (min-width : $screen-tablet + 1) and (max-width : $screen-desktop) {
+		@content;
+	}
+}
+/*Font
+=============================================================================*/
+@font-face {
+    font-family: $body-font-family;
+    src: $hire-buddy-main-font format("opentype");
+}
+@font-face {
+    font-family: $font-thin-header-logo;
+    src: $hire-buddy-thin-logo-font format("opentype");
+}
+@font-face {
+    font-family: $font-regular-header-logo;
+    src: $hire-buddy-regular-logo-font format("opentype");
+}
+/*Body
+=============================================================================*/
+body {
+    font-size: $body-font-size;
+    font-style: $body-font-style;
+}
+body, input, span, label, select ,h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu,nav, output, section, summary,
+time, mark, audio, video,canvas, button{
+    font-family: $body-font-family, $body-secondary-font;
+}
+
+/*H1 Tag
+=============================================================================*/
+h1 {
+    color: $h1-color;
+    text-transform: $h1-text-transform;
+    font-size: $header-font-size;
+}
+
+/*Anchor Tag
+=============================================================================*/
+a{ 
+    color: $anchor-links;
+    &:hover, &:focus{
+        text-decoration: none;
+    }
+}
+
+/*Table Header Tag
+=============================================================================*/
+th{
+    font-size: $table-header-font-size;
+}
+
+main{
+
+    min-height: (59vh);
+    &.container{
+        @include tablet-and-up {
+            padding: 0 15px;
+        }
+    }
+}
+
+/*Button Tag
+=============================================================================*/
+.btn-primary{ 
+    text-transform: uppercase;
+    min-width: 104px;
+}
+
+/*Form Field
+=============================================================================*/
+.form-control {
+    width: auto;
+    height: auto;
+    box-shadow: none;
+}
+
+/*Form Field With Button
+=============================================================================*/
+.input-group .form-control{
+    width: auto;
+    border: 0;
+    border-bottom: 2px solid $text-box-bottom-border; 
+}
+
+.input-group-btn {
+    width: auto;
+}
+
+/*Dropdown
+=============================================================================*/
+.btn-default{
+  min-width: 104px;
+}
+
+.drop-arrow{outline: 0;
+  bottom: 42px;
+  top : 2px;
+  left: 3%;
+  position: relative;
+  padding: 10px 5px;
+  line-height: 1.6em;
+  cursor: pointer;
+}
+
+.caret{
+  margin-left: 0;
+  border-top: $caret-width-base dashed #ccc;
+}
+
+.dropdown-menu{
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857;
+  color: #333;
+  white-space: nowrap;
+}
+
+
+/*Table Body Tag
+=============================================================================*/
+tr td{
+    font-size: $table-body-font-size;
+}

@@ -1,0 +1,17 @@
+{
+	"recruiterData":[
+		{ 
+		    "isArchive": true,
+		    "oracleId": 117412,   
+		    "recruiterName": "Raj Kumar",
+		    "phoneNo": "9790727251",
+		    "designation": "AL2",
+		    "addedBy": "Admin4",
+		    "addedOn": "08/08/2016",
+		    "sessionsCreated":"50",
+		    "sessionsAttend":"10",
+		    "candidatesPassed":"20",
+		    "cnadidatesFailed":"20"
+		}
+	]
+}

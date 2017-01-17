@@ -1,0 +1,133 @@
+#create-session-popup
+{
+    display: none;}
+
+.create-session
+{
+    button
+    {
+        margin-top: 10px;
+        margin-left: 34px;
+    }
+
+
+
+    h2
+    {
+        // margin: 20px 0 25px 5%;
+        margin: 0 0 30px 0;
+        padding:0 0 0 6%;
+        color: #de2729;
+        font-size: 20px;
+    }
+    div
+    {
+        div:nth-child(1), div:nth-child(2) {
+            padding: 3px 0 0 6%;
+        }
+
+        div
+        {
+            @include make-xs-column(12);
+            @include make-sm-column(12);
+            @include make-md-column(6);
+            @include make-lg-column(6);
+        }
+        input[type="button"]
+        {
+            @include make-xs-column(5);
+            @include make-sm-column(4);
+            @include make-md-column(3);
+            @include make-lg-column(2);
+            height: 40px;
+            color: white;
+            font-weight: 500;
+            border: none;
+            font-size: 18px;
+            background: black;
+            padding:8px 0 8px 0;
+            min-width:104px;
+            margin:20px 0 0 16%;
+            float:none !important;
+            outline:0;
+        }
+    }
+    div
+    {
+        label
+        {
+            font-weight: 500;
+            font-size: 12px;
+            display: inline-block;
+            margin: 0;
+            color:#1f1f1f;
+            margin-right: 12%;
+        }
+        .error
+        {
+            color :red;
+        }
+
+        input,select
+        {
+            margin: 0 0 8px 0;
+            border: 0;
+            background: #e5e5e5;
+            padding: 4px 0 4px 5px;
+            display: block;
+            width:87%;
+            font-size: 12px;
+        }
+        select
+        {
+            border: 1px solid #bdbdbd;
+            appearance:button;
+            -moz-appearance:button;
+            -webkit-appearance:button;
+        }
+        input[type="number"]
+        {
+            width:20%;
+        }
+        input[type="checkbox"]
+        {
+            display:inline-block;
+            width:auto;
+        }
+        input[type="file"]
+        {
+            background: none;
+            font-weight: 500;
+            padding: 4px 0 4px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .create-session
+    {
+        h2
+        {
+            padding:0;
+            margin: 0 0 18px 0;
+        }
+        .session-form div
+        {
+            div
+            {
+                padding: 3px 0 0 15px !important;
+            }
+            input[type="button"]
+            {
+                margin:10px 0 0 0;
+            }
+        }
+    }
+}
+.error
+{
+    font-weight: 500;
+    color:red;
+}
+

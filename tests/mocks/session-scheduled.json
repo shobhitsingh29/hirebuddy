@@ -1,0 +1,45 @@
+{
+  "sessionsData": [
+    {
+      "isScheduled": true,
+      "candidateName": "Scheduled Singh",
+      "email": "arsen4al@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Richa",
+      "appliedFor": "SAL1",
+      "sendDate": "02/08/2016",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 0
+    },
+    {
+      "isScheduled": true,
+      "candidateName": "Plavika Singh",
+      "email": "ro4naldo@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "apoorv",
+      "appliedFor": "SAL1",
+      "sendDate": "02/08/2016",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 0
+    },
+    {
+      "isScheduled": true,
+      "candidateName": "Plavika Singhghghfhhhf",
+      "email": "plav3u@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Richa",
+      "status": "Pending",
+      "appliedFor": "SAL1",
+      "years": 2,
+      "sendDate": "2016-04-05T18:30:00.000Z",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 9
+    }
+  ]
+}

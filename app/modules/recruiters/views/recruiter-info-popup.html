@@ -1,0 +1,37 @@
+<section class="recruiter-info-popup grid" ng-controller="ModifyRecruiterCtrl">
+
+
+    <h3>Recruiter Detail</h3>
+
+    <section class="col-sm-6 recruiter-profile">
+        <div class="col-xs-5 col-sm-7 col-xs-offset-4 col-sm-offset-2"><span class="nitro-icon-sprite icon-person col-sm-offset-3"></span></div>
+        <h4 class="col-sm-offset-2">{{ngDialogData.recruiterName}}</h4>
+        <span class="nitro-icon-sprite icon-delete" ng-click="addSession()"></span>
+    </section>
+    <section class="col-sm-6 recruiter-info ">
+        <ul class=" col-sm-offset-1 list-unstyled">
+            <li>
+                <div class="col-xs-10 col-sm-9 "><strong>Designation</strong></div>
+                <div class="col-xs-2 col-sm-3 ">{{ngDialogData.designation}}</div>
+            </li>
+            <li>
+                <div class="col-xs-10 col-sm-9 "><strong>No. of Sessions Created</strong></div>
+                <div class="col-xs-2 col-sm-3 ">{{ngDialogData.sessionsCreated}}</div>
+            </li>
+            <li>
+                <div class="col-xs-10 col-sm-9 "><strong>No. of Sessions attended</strong></div>
+                <div class="col-xs-2 col-sm-3 ">{{ngDialogData.sessionsAttend}}</div>
+            </li>
+            <li>
+                <div class="col-xs-10 col-sm-9 "><strong>No. of Candidates Passed</strong></div>
+                <div class="col-xs-2 col-sm-3 ">{{ngDialogData.candidatesPassed}}</div>
+            </li>
+            <li>
+                <div class="col-xs-10 col-sm-9 "><strong>No. of Candidates failed</strong></div>
+                <div class="col-xs-2 col-sm-3 ">{{ngDialogData.candidatesFailed}}</div>
+            </li>
+        </ul>
+    </section>
+
+
+</section>

@@ -1,0 +1,149 @@
+<div ui-view="content">
+    <main class="container">
+        <div ng-controller='SessionCtrl'
+             ng-init="navValue = 'active';setFilter('inactive');setFilter('expired');setFilter('scheduled');setFilter('active')"
+             class=' sub-nav'>
+            <div class='grid'>
+                <div ng-controller="PopUpCtrl" class="section grid">
+                    <span class="input-grp-button"><button class="btn btn-primary" id="add-session" pop-up data="{}"
+                                                           url="/modules/sessions/views/add-session.html">Add Sessions
+                    </button></span>
+                    <span class=''>
+                        <span>Select Recruiter :</span>
+                        <label for='drop-down-session' class="hide-label">Recruiters</label>
+                        <select id="drop-down-session" class=" drop-arrow"
+                                ng-model="filterItem.store"
+                                ng-options="session.recruitedBy for session in filterOptions.stores">
+                        </select>
+                    </span>
+                </div>
+                <aside>
+                    <a title="active count for sessions" ng-click="setFilter('active');"
+                       ng-class="{activeAnchor : getFilter() === 'active'}">Active ({{activeEntries}}) </a>
+                    <a title="inactive count for sessions" ng-click="setFilter('inactive')"
+                       ng-class="{activeAnchor : getFilter() === 'inactive'}">Inactive ({{inactiveEntries}}) </a>
+                    <a title="expired count for sessions" ng-click="setFilter('expired')"
+                       ng-class="{activeAnchor : getFilter() === 'expired'}">Expired ({{expiredEntries}})</a>
+                    <a title="scheduled count for sessions" ng-click="setFilter('scheduled')"
+                       ng-class="{activeAnchor : getFilter() === 'scheduled'}">Scheduled ({{scheduledEntries}}) </a>
+                </aside>
+            </div>
+
+
+            <div id="table-container">
+                <table class="table" ng-if='getFilter() === "active"'>
+                    <caption class="hide-label">Active Sessions</caption>
+                    <thead class="row">
+                    <tr>
+                        <th scope="col">Candidate Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone Number</th>
+                        <th scope="col">Recruited By</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Applied For</th>
+                        <th scope="col">Send Date</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="session in session.sessionsData | filter:customFilter" ng-controller='PopUpCtrl'>
+                        <td>{{session.candidateName}}</td>
+                        <td>{{session.email}}</td>
+                        <td>{{session.phone}}</td>
+                        <td>{{session.recruitedBy}}</td>
+                        <td class="{{(session.status === 'Live') ? 'live' : 'pending'}}">{{session.status}}</td>
+                        <td>{{session.appliedFor}}</td>
+                        <td>{{session.sendDate | date:'dd/MM/yyyy'}}</td>
+                        <td><a title="edit sessions" ng-if="::session.status==='Pending'"
+                               class="nitro-icon-sprite icon-edit "
+                               pop-up data='session'
+                               url="{{'/modules/sessions/views/modify-session.html'}}" ></a>
+                            <a ng-if="::session.status!='Pending'" title="action not allowed"> &#9940;</a></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+
+                <table class="table" ng-if='getFilter() === "inactive"'>
+                    <caption class="hide-label">Inactive Sessions</caption>
+                    <thead class="row">
+                    <tr>
+                        <th scope="col">Candidate Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone Number</th>
+                        <th scope="col">Recruited By</th>
+                        <th scope="col">Applied For</th>
+                        <th scope="col">Send Date</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="session in session.sessionsData | filter:customFilter" ng-controller='PopUpCtrl'>
+                        <td>{{session.candidateName}}</td>
+                        <td>{{session.email}}</td>
+                        <td>{{session.phone}}</td>
+                        <td>{{session.recruitedBy}}</td>
+                        <td>{{session.appliedFor}}</td>
+                        <td>{{session.sendDate |date:'dd/MM/yyyy'}}</td>
+                        <td><a class="nitro-icon-sprite icon-edit" data='session' title="edit"
+                               pop-up url="/modules/sessions/views/modify-session.html"></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="table" ng-if='getFilter() === "expired"'>
+                    <caption class="hide-label">Expired Sessions</caption>
+                    <thead class="row">
+                    <tr>
+                        <th scope="col">Candidate Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone Number</th>
+                        <th scope="col">Recruited By</th>
+                        <th scope="col">Applied For</th>
+                        <th scope="col">Send Date</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="session in session.sessionsData | filter:customFilter" ng-controller='PopUpCtrl'>
+                        <td>{{session.candidateName}}</td>
+                        <td>{{session.email}}</td>
+                        <td>{{session.phone}}</td>
+                        <td>{{session.recruitedBy}}</td>
+                        <td>{{session.appliedFor}}</td>
+                        <td>{{session.sendDate|date:'dd/MM/yyyy'}}</td>
+                        <td><a class="nitro-icon-sprite icon-edit" data='session' title="edit"
+                               pop-up url="/modules/sessions/views/modify-session.html"></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="table" ng-if='getFilter() === "scheduled"'>
+                    <caption class="hide-label">Scheduled Sessions</caption>
+                    <thead class="row">
+                    <tr>
+                        <th scope="col">Candidate Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone Number</th>
+                        <th scope="col">Recruited By</th>
+                        <th scope="col">Applied For</th>
+                        <th scope="col">Scheduled Date</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="session in session.sessionsData | filter:customFilter" ng-controller='PopUpCtrl'>
+                        <td>{{session.candidateName}}</td>
+                        <td>{{session.email}}</td>
+                        <td>{{session.phone}}</td>
+                        <td>{{session.recruitedBy}}</td>
+                        <td>{{session.appliedFor}}</td>
+                        <td date-picker data="sd"> {{session.sendDate |date:'dd/MM/yyyy'}}</td>
+                        <td><a class="nitro-icon-sprite icon-edit" data='session' title="edit"
+                               pop-up url="/modules/sessions/views/modify-session.html"></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>

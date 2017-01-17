@@ -1,0 +1,39 @@
+footer {
+    border-bottom: 3px solid $bottom-border-color;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    .left-details-footer {
+        display: inline-block;
+        padding: 40px 0 15px 6.77%;
+    }
+
+    .right-details-footer {
+        float: right;
+        padding: 40px 6.77% 15px 0;
+    }
+    
+    .right-details-footer a {
+            float: left;
+            &:first-child {
+            padding: 0 10px 0 0;
+            background: url('/assets/images/text-separator.png') no-repeat right center;
+            }
+            &:last-child {
+            padding: 0 0 0 10px;
+            }
+    }
+    @include tablet-and-up {
+        >div {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .left-details-footer {
+            padding: 40px 0 15px 5.37%;
+        }
+        .right-details-footer {
+            padding: 40px 5.37% 15px 0;
+        }
+    }
+}

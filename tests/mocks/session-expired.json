@@ -1,0 +1,32 @@
+
+
+{
+  "sessionsData" :[
+    {
+      "isExpired": true,
+      "candidateName":"Expired Singh",
+      "email": "hardnoor@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "apoorv",
+      "appliedFor": "SAL1",
+      "sendDate": "02/08/2016",
+      "action": {
+        "reactivate":"reactivate"
+      },
+      "id":0
+    },
+    {
+      "isExpired": true,
+      "candidateName":"Plavika Singh",
+      "email": "gaega@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Richa",
+      "appliedFor": "SAL1",
+      "sendDate": "02/08/2016",
+      "action": {
+        "reactivate":"reactivate"
+      },
+      "id":0
+    }
+  ]
+}

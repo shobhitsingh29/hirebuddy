@@ -1,0 +1,57 @@
+
+.nitro-icon-sprite { 
+    display: inline-block;
+    background : $sprite-images-url no-repeat;
+    overflow: hidden; 
+    text-indent: -9999px;
+    text-align: left;
+     
+        &.icon-desktop-header-background { background-position: -0px -0px; width: 1300px; height: 65px; }
+        &.icon-person { background-position: -0px -65px; width: 68px; height: 83px; }
+        &.icon-header-logo { background-position: -68px -65px; width: 65px; height: 65px; }
+        &.icon-header-profile-picture { background-position: -133px -65px; width: 55px; height: 55px; }
+        &.icon-questionmark { background-position: -188px -65px; width: 52px; height: 60px; }
+        &.icon-session-black { background-position: -240px -65px; width: 47px; height: 24px; }
+        &.icon-session-red { background-position: -287px -65px; width: 47px; height: 24px; }
+        &.icon-close-button-normal { background-position: -334px -65px; width: 33px; height: 13px; }
+        &.icon-close-button { background-position: -367px -65px; width: 33px; height: 13px; }
+        &.icon-pdf { background-position: -400px -65px; width: 33px; height: 40px; }
+        &.icon-interviewer-black { background-position: -433px -65px; width: 31px; height: 31px; }
+        &.icon-interviewer-red { background-position: -464px -65px; width: 31px; height: 31px; }
+        &.icon-candidate-black { background-position: -496px -65px; width: 26px; height: 31px; }
+        &.icon-candidate-red { background-position: -522px -65px; width: 26px; height: 31px; }
+        &.icon-copyright { background-position: -549px -65px; width: 27px; height: 28px; }
+        &.icon-questions-black { background-position: -576px -65px; width: 26px; height: 30px; }
+        &.icon-questions-red { background-position: -602px -65px; width: 26px; height: 30px; }
+        &.icon-send-mail { background-position: -628px -65px; width: 25px; height: 25px; }
+        &.icon-recruiter-black { background-position: -653px -65px; width: 25px; height: 31px; }
+        &.icon-recruiter-red { background-position: -678px -65px; width: 25px; height: 31px; }
+        &.icon-archive { background-position: -703px -65px; width: 22px; height: 16px; }
+        &.icon-down-arrow { background-position: -725px -65px; width: 22px; height: 30px; }
+        &.icon-interviewer-black-mobile { background-position: -747px -65px; width: 22px; height: 22px; }
+        &.icon-interviewer-red-mobile { background-position: -769px -65px; width: 22px; height: 22px; }
+        &.icon-view { background-position: -791px -65px; width: 22px; height: 17px; }
+        &.icon-month-backward-normal { background-position: -813px -65px; width: 20px; height: 20px; }
+        &.icon-month-backward { background-position: -833px -65px; width: 20px; height: 20px; }
+        &.icon-month-forward-normal { background-position: -853px -65px; width: 20px; height: 20px; }
+        &.icon-month-forward { background-position: -873px -65px; width: 20px; height: 20px; }
+        &.icon-year-backward-normal { background-position: -893px -65px; width: 20px; height: 20px; }
+        &.icon-year-backward { background-position: -913px -65px; width: 20px; height: 20px; }
+        &.icon-year-forward-normal { background-position: -933px -65px; width: 20px; height: 20px; }
+        &.icon-year-forward { background-position: -953px -65px; width: 20px; height: 20px; }
+        &.icon-candidate-black-mobile { background-position: -973px -65px; width: 19px; height: 22px; }
+        &.icon-candidate-red-mobile { background-position: -992px -65px; width: 19px; height: 22px; }
+        &.icon-date { background-position: -1011px -65px; width: 19px; height: 16px; }
+        &.icon-edit { background-position: -1030px -65px; width: 18px; height: 18px; }
+        &.icon-questions-black-mobile { background-position: -1048px -65px; width: 18px; height: 22px; }
+        &.icon-questions-red-mobile { background-position: -1066px -65px; width: 18px; height: 21px; }
+        &.icon-recruiter-black-mobile { background-position: -1084px -65px; width: 18px; height: 22px; }
+        &.icon-recruiter-red-mobile { background-position: -1102px -65px; width: 18px; height: 22px; }
+        &.icon-delete { background-position: -1120px -65px; width: 14px; height: 14px; }
+        &.icon-vector-smart-object-password { background-position: -1134px -65px; width: 14px; height: 19px; }
+        &.icon-vector-smart-object-user { background-position: -1148px -65px; width: 14px; height: 14px; }
+        &.icon-cross { background-position: -1162px -65px; width: 12px; height: 12px; }
+        &.icon-download { background-position: -1174px -65px; width: 8px; height: 10px; }
+        &.icon-text-separator { background-position: -1182px -65px; width: 1px; height: 11px; }
+        &.icon-vertical { background-position: -1183px -65px; width: 1px; height: 1px; }
+};

@@ -1,0 +1,48 @@
+<section id="add-interviewer-popup" ng-controller="ViewInterviewerCtrl">
+        <div  id="popup-content">
+            <div class="col-md-12 col-sm-12">
+                <h2>Profile</h2>
+                  <form  method="POST" name="formInterviewers"
+                        id="form-interviewers"  ng-submit="addInterviewer()">
+                            <!--Display Pic and Name  of Employee -->
+                            <div class="employee-detailsImg right-align col-md-4 col-sm-12">
+                            <span class="nitro-icon-sprite icon-person"></span>
+                            </div>
+                        <!--Details  of Employee -->
+                        <fieldset class="col-md-8 col-sm-12">
+                            <legend class="sr-only">Emplopyee's Detail</legend>
+                            <div class="employee-details">
+                                <label for="emp-name">Name : </label>
+                                <input type="text" id="emp-name" value="{{ngDialogData.name}}" disabled />
+                            </div>
+                            <div class="employee-details">
+                                <label for="emp-email"> Email Id: </label>
+                                <input type="text" id="emp-email" value="{{ngDialogData.details.email}}" disabled />
+                            </div>
+                            <div class="employee-details">
+                                <label for="emp-iD"> Oracle Id : </label>
+                                <input type="text" id="emp-iD" value="{{ngDialogData.oracleid}}" disabled />
+                            </div>
+                            <div class="employee-details">
+                                <label for="emp-title"> Title : </label>
+                                <input type="text" id="emp-title" value="{{ngDialogData.title}}" disabled />
+                            </div>
+                            <div class="employee-details">
+                                <label for="level-of-certi"> Level of Certification : </label>
+                                <input type="text" id="level-of-certi" value="{{ngDialogData.details.levelOfCert}}" disabled />
+                            </div>
+                            <div class="employee-details">
+                                <label for="certified-by"> Certified By : </label>
+                                <input type="text" id="certified-by" value="{{ngDialogData.details.certifiedBy}}" disabled />
+                            </div>
+                            <div class="employee-details">
+                                <label for="date-of-certi"> Date of Certification : </label>
+                                <input type="text" id="date-of-certi" value="{{ngDialogData.details.cDate}}" disabled />
+                            </div>
+                        </fieldset>
+
+            <input type="submit" class="interviewer-submit pull-right" value="Submit" />
+      </form>
+                </div>
+            </div>
+    </section>

@@ -1,0 +1,31 @@
+<main class='container'>
+     <div id="table-container">
+     <table class="table" ng-controller='Candidate'>
+   <thead>
+
+        <th title='Candidates Name'>Candidates Name</th>
+        <th title='Recruiters'>Recruiters</th>
+        <th title='Interviewer'>Interviewer</th>
+        <th title='Phone Number'>Phone Number</th>
+        <th title='Applied For'>Applied For</th>
+        <th title='Date' class='sortable'>Date</th>
+        <th title='Action'>Action</th>
+    </thead>
+    <tbody>
+       <tr ng-repeat='candidate in candidate.candidateData'>
+       <td title='{{candidate.candidateName}}'>{{candidate.candidateName}}</td>
+       <td title='{{candidate.recruiter}}'>{{candidate.recruiter}}</td>
+       <td title='{{candidate.interviewer}}'>{{candidate.interviewer}}</td>
+       <td title='{{candidate.phoneNumber}}'>{{candidate.phoneNumber}}</td>
+       <td title='{{candidate.appliedFor}}'>{{candidate.appliedFor}}</td>
+       <td title='{{candidate.date}}'>{{candidate.date}}</td>
+       <td><a href='#' title="download candidate details in pdf format" media="print"><span
+       class="nitro-icon-sprite icon-pdf"></span></a></td>
+        </tr>
+    </tbody>
+    <tbody>
+
+    </table>
+        </div>
+</main>
+

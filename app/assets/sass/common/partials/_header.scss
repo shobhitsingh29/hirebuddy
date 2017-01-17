@@ -1,0 +1,73 @@
+header {
+	height: 65px;
+    margin-bottom: 35px;
+	background: url('/assets/images/desktop-header-background.png') no-repeat;
+	background-size: cover;
+
+	.left-details-header {
+		display: inline-block;
+		height: 100%;
+    }
+    h1 {
+        font-family: $font-thin-header-logo;
+        font-weight: lighter;
+        padding: 0 0 0 25px;
+        line-height: 1.3em;
+        span {
+            font-family: $font-regular-header-logo;
+            font-weight: bold;
+        }
+    }
+    .right-details-header {
+        display: none;
+        float: right;
+        padding: 0 6.77% 0 0;
+        p {
+            line-height: 5.5em;
+            color: $font-color;
+            padding: 0 10px 0 0;
+            background: url('/assets/images/text-separator.png') no-repeat right center;
+        }
+        .log-out {
+            padding: 0 15px 0 10px;
+            line-height: 5.5em;
+            color: $text-red-color;
+        }
+        img {
+            padding: 5px 0 5px 0;
+        }
+    }
+    .left-details-header > a, .right-details-header > p, .right-details-header > a {
+        float: left;
+    }
+    .nav-burger-btn{
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid transparent;
+        font-size: 1.5em;
+        float: right;
+        height: 65px;
+        width: 65px;
+        color:$nitro-base-white-color;
+        &:hover, &:focus{
+            outline: none;
+        }
+    }
+
+    @include tablet-and-up {        
+        margin-bottom: 0;
+        
+        >div {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .right-details-header {
+            display: block;
+            padding: 0 5.37% 0 0;
+        }
+        .nav-burger-btn {
+            
+            display: none;
+        }
+    }
+}

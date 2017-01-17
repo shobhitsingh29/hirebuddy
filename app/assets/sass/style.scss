@@ -1,0 +1,30 @@
+// important bootstrap files. variables, mixins
+// Core variables and mixins
+
+@import "common/_reset.scss";
+@import "common/_variables.scss";
+@import "common/themes/_nitro.scss";
+@import "common/_mixins.scss";
+@import "common/_bootstrap.scss";
+@import "common/_initialize.scss";
+@import "common/_sprite.scss";
+
+//Components SCSS
+@import "common/partials/_header.scss";
+@import "common/partials/_footer.scss";
+@import "common/partials/_nav-bar.scss";
+@import "candidate/candidate.scss";
+@import "common/partials/_modal-popup.scss";
+@import "common/partials/_table-template.scss";
+@import "login/_login.scss";
+@import "sessions/_sessions.scss";
+@import "sessions/create-session.scss";
+@import "common/partials/_admin-download.scss";
+@import "recruiter/recruiter.scss";
+@import "interviewer/interviewer.scss";
+@import "common/partials/_modal-popup-recruiter-info.scss";
+@import "sessions/create-session.scss";
+@import "interviewer/interviewer.scss";
+@import "common/partials/_calendar.scss";
+
+

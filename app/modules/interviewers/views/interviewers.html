@@ -1,0 +1,98 @@
+
+<main class="container" >
+
+    <div ng-init='navValue = "active"' ng-controller='InterviewerCtrl' class='sub-nav'>
+
+
+      <div class="grid">
+      <div class="section">
+            <div class="input-group">
+        <label for="oracle-id" class="sr-only">Oracle ID : </label>
+        <input type="text" class="form-control" placeholder="Oracle ID" id="oracle-id" max-length='6' ng-model='enteredId'>
+        <span class="input-group-btn">
+          <button class="btn btn-primary add-recruiter" type="submit" 
+              pop-up data='interviewee' url="/modules/interviewers/views/view-interviewer.html" ng-click='interviewerSelect(enteredId)' >Add Interviewer</button>
+
+      </span>
+  </div>
+      </div>
+     
+
+  <aside>
+    <a  class="active-view" ng-class="{activeAnchor : getFilter() == 'active'}"
+        ng-click='setFilter("active")'>active ({{activeEntries.length}})<span class="active-count"></span></a>
+    <a class="archive-view" ng-click='setFilter("archive")'
+       ng-class="{activeAnchor : getFilter() == 'archive'}">inactive ({{archiveEntries.length}})<span class="archive-count"></span></a>
+</aside>
+
+</div>
+
+<div id="table-container">
+    <table class="table" ng-if='getFilter() === "active"'>
+       <thead  class='row'>
+        <th>Oracle Id</th>
+        <th>Interviewer Name</th>
+        <th >Title</th>
+        <th >Email</th>
+        <th >Level Of Certification</th>
+        <th >Certified By</th>
+        <th >Certification Date</th>
+        <th >Last Interview</th>
+        <th >Interview Taken</th>
+        <th >Action</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat='interviewer in interviewer.interviewerData' ng-if='interviewer.isActive'>
+            <td>{{interviewer.oracleid}}</td>
+            <td  >{{interviewer.name}}</td>
+            <td contenteditable="true">{{interviewer.title}}</td>
+            <td >{{interviewer.details.email}}</td>
+            <td contenteditable="true">{{interviewer.details.levelOfCert}}</td>
+            <td contenteditable="true">{{interviewer.details.certifiedBy}}</td>
+            <td >{{interviewer.details.cDate}}</td>
+            <td >{{interviewer.details.lastInterview}}</td>
+            <td >{{interviewer.details.interviewTaken}}</td>
+
+            <td ><a class="revoke-access" title="send active candidates to inactive list" 
+            href="javascript:void(0)" ng-click='revokeAccess($index)'>{{interviewer.link}}</a></td>
+
+   
+    </tbody>
+</table>
+
+
+<table class="table" ng-if='getFilter() === "archive"'>
+   <thead>
+       <!--  <th class="">Oracle Id</th> -->
+       <th class="">Interviewer Name</th>
+       <th class="">Title</th>
+       <th class="">Email</th>
+       <th class="">Level Of Certification</th>
+       <th class="">Certified By</th>
+       <th class="">Certification Date</th>
+       <th class="">Last Interview</th>
+       <th class="">Interview Taken</th>
+       <th >Action</th>
+   </thead>
+   <tbody>
+    <tr ng-repeat='interviewer in interviewer.interviewerData' ng-if='interviewer.isArchive'>
+       <!--  <td class="">{{interviewer.oracleid}}</td> -->
+       <td  class="">{{interviewer.name}}</td>
+       <td class="" contenteditable="true">{{interviewer.title}}</td>
+       <td class="">{{interviewer.details.email}}</td>
+       <td class="" contenteditable="true">{{interviewer.details.levelOfCert}}</td>
+       <td class="" contenteditable="true">{{interviewer.details.certifiedBy}}</td>
+       <td class="">{{interviewer.details.cDate}}</td>
+       <td class="">{{interviewer.details.lastInterview}}</td>
+       <td class="">{{interviewer.details.interviewTaken}}</td>
+
+       <td ><a class="revoke-access" title="grant access to inactive candidates" 
+       href="javascript:void(0)" ng-click='grantAccess($index)'>{{interviewer.link}}</a></td>
+
+       
+   </tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>

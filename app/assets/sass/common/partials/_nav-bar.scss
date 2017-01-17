@@ -1,0 +1,258 @@
+nav {
+    @include tablet-and-up {
+        max-width: 1170px;
+        margin: 0 auto 35px;
+        border-bottom: 3px solid $bottom-border-color;
+        text-align: center;
+    }
+    div {
+        height: 50px;
+        text-align: right;
+        padding: 5px 5px 0 0;
+        @include tablet-and-up {
+            display: none;
+        }
+    }
+    ul {
+        display: none;
+        list-style: none;
+        background-color: $mobile-backgroud-color;
+        width: 150px;
+        padding: 0 0 10px 0;
+        margin: 0 0 0 0;
+        z-index: 3;
+        @include tablet-and-up {
+            display: block;
+            background-color: transparent;
+            width: 75%;
+            float: none;
+            padding: 25px 0 0 0;
+            margin: 0 auto;
+        }
+        li {
+            margin: 0 0 0 10px;
+            display: inline-block;
+            @include tablet-and-up {
+                margin: 0 0 0 0;
+                width: 19%;
+                display: inline-block;
+            }
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $anchor-links;
+                &:hover, &:focus {
+                    text-decoration: none;
+                    color: $text-red-color;
+                }
+                @include tablet-and-up {
+                    display: block;
+                   text-align: center;
+                }
+                span {
+                    &:first-of-type {
+                        display: inline-block;
+                        position: relative;
+                        top: 10px;
+                        transform: scale(0.6, 0.6);
+                        @include tablet-and-up {
+                            transform: none;
+                            margin-bottom: 25px;
+                        }
+                    }
+                    &:last-of-type {
+                        
+                    }
+                    @include tablet-and-up {
+                        display: block;
+                        clear: both;
+                    }
+                }
+            }
+            
+            &:hover {
+                a > span {
+                    color: $text-red-color;
+                }
+            }
+            &:last-of-type {
+                span:first-of-type {
+                    width: 26px;
+                    height: 30px;
+                    display: inline-block;
+                }
+                @include tablet-and-up {
+                    
+                }
+            }
+            &::after{
+                width: 0;
+                        height: 0;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                        border-top: 7px solid $bottom-border-color;
+                        position: relative;
+                        top: 25px;
+                        margin: 0 auto;
+                        visibility:hidden;
+                        content:"";
+            }
+        }
+        
+        &.showMobileMenu {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 65px;
+        }
+    }
+}
+
+.active-tab {
+    @include tablet-and-up {
+        span:last-of-type{
+            visibility: visible;
+        }
+    }
+}
+
+.nav-item-recruiter {
+    > a span:first-of-type{
+        @extend .icon-recruiter-black;
+    }
+}
+
+.nav-item-session > a {
+    span:first-of-type {
+        @extend .icon-session-black;
+        right: 10px;
+        @include tablet-and-up {
+            right: 0;
+        }
+    }
+    span:nth-child(2) {
+        position: relative;
+        right: 16px;
+        @include tablet-and-up {
+            right: 0;
+        }
+    }
+}
+
+.nav-item-interviewer > a {
+    span:first-of-type {
+        @extend .icon-interviewer-black;
+        right: 5px;
+        @include tablet-and-up {
+            right: 0;
+        }
+    }
+    span:nth-child(2) {
+        position: relative;
+        right: 5px;
+        @include tablet-and-up {
+            right: 0;
+        }
+    }
+}
+
+.nav-item-candidate > a span:first-of-type {
+    @extend .icon-candidate-black;
+}
+
+.nav-item-questions {
+    > a span:first-of-type {
+        @extend .icon-questions-black;
+    }
+}
+
+ 
+ 
+.nav-recruiter-page {
+     > a {
+        color: $text-red-color;
+        @extend .active-tab;
+        span:first-of-type {
+            @extend .icon-recruiter-red;
+        } 
+    }
+    &::after{
+         visibility:visible;
+    }
+          
+}
+
+.nav-candidate-page { 
+    > a{   
+        color: $text-red-color;
+        @extend .active-tab;
+        span:first-of-type {
+            @extend .icon-candidate-red;
+        }
+
+    }
+    
+            &::after{
+         visibility:visible;
+    }
+        
+}
+
+.nav-questions-page { 
+    > a{
+        color: $text-red-color;
+        @extend .active-tab;
+        span:first-of-type {
+            @extend .icon-questions-red;
+        }
+    }
+    
+            &::after{
+         visibility:visible;
+    }
+        
+}
+.nav-session-page { 
+    > a {
+        color: $text-red-color;
+        @extend .active-tab;
+        span:first-of-type {
+            @extend .icon-session-red;
+        }
+    }
+    
+            &::after{
+         visibility:visible;
+    }
+        
+}
+.nav-interviewer-page {
+     a {
+        color: $text-red-color;
+        @extend .active-tab;
+        span:first-of-type {
+            @extend .icon-interviewer-red;
+        }
+    }
+  
+            &::after{
+         visibility:visible;
+    }
+      
+}
+
+.nav-item-recruiter:hover > a span:first-of-type {
+    @extend .icon-recruiter-red;
+}
+.nav-item-interviewer:hover > a span:first-of-type {
+    @extend .icon-interviewer-red;
+}
+.nav-item-session:hover > a span:first-of-type {
+    @extend .icon-session-red;
+}
+.nav-item-questions:hover > a span:first-of-type {
+    @extend .icon-questions-red;
+}
+.nav-item-candidate:hover > a span:first-of-type {
+    @extend .icon-candidate-red;
+}

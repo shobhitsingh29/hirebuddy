@@ -1,0 +1,57 @@
+$redColor: #dc2e2f;
+#download-glyphicon,
+.input-date,
+.show,
+.submit-content {
+    display: inline-block;
+}
+
+@mixin download-button-save {
+    font-size: 12px;
+    color: $nitro-base-red-color;
+    font-family: SapientSansMedium;
+}
+
+.download-container {
+    float:right;
+    position:relative;
+    .download-button {
+        @include download-button-save;
+    }
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    #download-glyphicon {
+        color: $nitro-base-red-color;
+        padding-top: 2px;
+    }
+}
+
+.popup-container {
+    display: none;
+}
+
+.popup-container-inner {
+    .input-date {
+        margin: 10px 0 0 55px;
+    }
+    .from-date,
+    .to-date {
+        margin-left: 5px;
+    }
+    label {
+        color: $nitro-base-red-color;
+        font-weight: normal;
+    }
+    .submit-container {
+        text-align: right;
+    }
+    .submit-content {
+        border: 0;
+        outline: 0;
+        color: $nitro-base-red-color;
+        font-size: 16px;
+        background-color: #fff;
+    }
+}

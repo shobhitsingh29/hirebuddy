@@ -1,0 +1,27 @@
+
+<header  ng-controller="HeaderCtrl">
+    <div>
+        <div class="left-details-header">
+            <a href="http://www.sapient.com"><img src="/assets/images/header-logo.png" alt="Hire Buddy Logo" />
+            </a>
+            <a href="#" title="Hire Buddy"><h1>Hire <span>Buddy</span></h1></a>
+        </div>
+
+        <div class="right-details-header" ng-if="$state.current.name !='login'">
+            <p>{{user}}</p>
+            <a ui-sref="login" title="Click here to log out" class="log-out" ng-click="logout()"><span>Log Out</span></a>
+            <a href="#"><img src="/assets/images/header-profile-picture.png" title="User Pic" alt="Profile Picture" />
+            </a>
+        </div>
+        <button type="button" class="nav-burger-btn" ng-if="$state.current.name !='login'" ng-click='toggleNavBurger($event)'>&#9776;</button>
+        <div class="nav-burger" ng-if='navBurger'>
+            <ul>
+                <li>Sessions</li>
+                <li>Candidates</li>
+                <li>Recruiters</li>
+                <li>Interviewers</li>
+            </ul>
+        </div>
+    </div>
+</header>
+

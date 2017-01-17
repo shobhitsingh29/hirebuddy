@@ -1,0 +1,27 @@
+.landing-page {
+    max-width: 940px;
+    margin: 0 auto;
+    article {
+        margin-left: 10px;
+        max-width: 770px;
+        ul {
+            margin: 50px 0 0 0;
+            padding: 0;
+            li {
+                margin: 10px 40px;
+            }
+        }
+        input[type='checkbox'] {
+            margin-left: 40px;
+            cursor: pointer;
+        }
+        label[for='acknowledgement'] {
+            cursor: pointer;
+        }
+        input[type='submit'] {
+            display: block;
+            margin: 50px auto;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='HBuddyApp'>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/css/angular-datepicker.css">
+    <link rel="stylesheet" type="text/css" href="/ng-dialog/css/ngDialog-theme-default.css">
+    <link rel="stylesheet" type="text/css" href="/ng-dialog/css/ngDialog-theme-plain.css">
+    <link rel="stylesheet" type="text/css" href="/ng-dialog/css/ngDialog-custom-width.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>HIRE BUDDY</title>
+</head>
+
+<body ng-controller='HomeCtrl'>
+
+<div ng-if="$state.current.name === 'login'" ng-class="{loginBg: $state.current.name === 'login'}"></div>
+<div ui-view='header'></div>
+<div ui-view="login" ng-if="$state.current.name === 'login'"></div>
+<div ui-view='nav' ng-if="$state.current.name !== 'login'"></div>
+<div ui-view='content' ng-if="$state.current.name !== 'login'"></div>
+<div ui-view='footer'></div>
+
+
+<!-- script includes -->
+
+<!-- third party javascript -->
+<script src="/angular/angular.min.js"></script>
+<script src="/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/ng-dialog/js/ngDialog.min.js"></script>
+<script src="/angularjs-datepicker/src/js/angular-datepicker.js"></script>
+
+<!-- common javascript -->
+<script src="/modules/common/app.js"></script>
+<script src="/modules/common/route.js"></script>
+<script src="/modules/common/constant.js"></script>
+<script src="/modules/common/config.js"></script>
+
+<!-- common services -->
+<script src="/modules/common/services/common-service.js"></script>
+<script src="/modules/common/services/service-call.js"></script>
+<script src="/modules/common/services/login-check.js"></script>
+<script src="/modules/common/services/interceptor.js"></script>
+<script src="/modules/common/services/remember-me.js"></script>
+<script src="/modules/common/services/store-in-session.js"></script>
+<script src="/modules/common/services/user-details.js"></script>
+
+<!-- common controllers -->
+<script src="/modules/common/controllers/header.js"></script>
+<script src="/modules/common/controllers/home-controller.js"></script>
+<script src="/modules/common/controllers/dropdown.js"></script>
+<script src="/modules/common/controllers/pop-up.js"></script>
+
+<!-- common directives -->
+<script src="/modules/common/directive/pop-up.js"></script>
+
+<!-- page specific controllers -->
+<script src="/modules/login/controllers/login.js"></script>
+<script src='/modules/sessions/controllers/sessions.js'></script>
+<script src='/modules/sessions/controllers/add-session.js'></script>
+<script src='/modules/sessions/controllers/modify-session.js'></script>
+<script src='/modules/candidates/controllers/candidate.js'></script>
+<script src='/modules/recruiters/controllers/recruiter.js'></script>
+<script src='/modules/recruiters/controllers/recruiter-info-popup.js'></script>
+<script src='/modules/interviewers/controllers/interviewer.js'></script>
+<script src='/modules/interviewers/controllers/view-interviewer.js'></script>
+
+</body>
+</html> 
+
+
+
+
+   

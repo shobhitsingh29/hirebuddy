@@ -1,0 +1,56 @@
+//Nitro Theme
+$nitro-base-white-color: #faf9f8;
+$nitro-base-red-color: #dc2e2f;
+$nitro-base-black-color: #1f1f1f;
+$nitro-base-dark-blue-color: #0584c4;
+$nitro-base-light-blue-color: #00adef;
+
+//Global Theme
+$global-base-grey-color: #d3d3d3;
+$global-base-blue-color: #0000ff;
+$global-base-brown-color: #f4a460;
+$mobile-backgroud-color:#e5e5e5;
+
+//Fonts
+$hire-buddy-main-font:  url("/assets/fonts/SapientSansMedium.TTF");
+$hire-buddy-regular-logo-font:  url("/assets/fonts/SapientCentroSlab-Reg.otf");
+$hire-buddy-thin-logo-font: url("/assets/fonts/SapientCentroSlab-XThin.ttf");
+
+//Common
+$body-font-size: 12px;
+$body-font-style: normal;
+$body-font-family: SapientSansMedium;
+$body-secondary-font: Arial;
+
+//Header
+$font-thin-header-logo: SapientSansCentroSlab;
+$font-regular-header-logo: SapientSansCentroSlab;
+$h1-text-transform: uppercase;
+$header-font-size: 2em;
+
+//Buttons
+$grid-gutter-width : 0px;
+$padding-base-vertical: 10px;
+$padding-base-horizontal: 10px;
+$font-base-size: 24px;
+$btn-border-radius-base: 0px;
+
+//Table
+$table-header-font-size: 1.25em;
+$nitro-base-lightgrey-color: #ffffff;
+$nitro-base-bottom-color: #afb0b2;
+$table-body-font-size: 1.2em;
+
+//Input Field
+$input-border-radius: 0px;
+
+//Glyphicons
+$icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+$color-background:#e5e5e5;
+$color-dark: #3f3f3f;
+$color-light: #fff;
+$input_fields_color:#ebebeb;
+$color_mountain_mist_approx: #969696;
+$sprite-images-url: url("/assets/images/hbuddy-sprite.png");
+$vertical-image-url: url("/assets/images/vertical.png");

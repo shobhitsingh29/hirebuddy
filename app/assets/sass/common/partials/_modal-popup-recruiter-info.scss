@@ -1,0 +1,61 @@
+.recruiter-info-popup{
+
+    h3{
+        margin:0 0 25px 29px;
+        color:#dc2e2f;
+        font-size: 17px;
+    }
+    .recruiter-profile{
+        div{
+            height: 130px ; 
+            border: 3px solid #e5e5e5;
+            margin-bottom: 10px;
+        }
+        .icon-person{
+            margin-top:20px;
+        }
+        h4{
+            display:inline-block;
+            font-size: 1.7em;
+            font-weight:100;
+            text-transform: uppercase;
+        }
+    }
+    .recruiter-info{
+        font-size: 11px;
+        padding-right: 0;
+        h4{
+            font-size: 1em;           
+        }
+        strong{
+            font-weight:bolder;
+        }
+        ul{
+            @include clearfix();
+            li{
+               @include clearfix();
+               margin-bottom: 18px;
+               text-align: left; 
+            }
+        }
+    }
+
+}
+@media (min-width: $screen-sm-min) {
+    .recruiter-info-popup{
+        h3{
+            font-size: 2.333em;
+        }
+        .recruiter-profile{
+            float: right;
+        }
+        .recruiter-info{
+            font-size: 1.167em;
+            h4{
+                font-size: 1.913em;
+            }
+        }
+    }
+}
+
+    

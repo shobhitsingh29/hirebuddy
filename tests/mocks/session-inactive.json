@@ -1,0 +1,30 @@
+{
+  "sessionsData" :[
+    {
+      "isInactive": true,
+      "candidateName":"Inactive Singh",
+      "email": "pras3hu@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Richa",
+      "appliedFor": "SAL1",
+      "sendDate": "02/08/2016",
+      "action": {
+        "reactivate":"reactivate"
+      },
+      "id":0
+    },
+    {
+      "isInactive": true,
+      "candidateName":"Plavika Singh",
+      "email": "psingh3120@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Richa",
+      "appliedFor": "SAL1",
+      "exp":"2",
+      "sendDate": "02/08/2016",
+      "action": {
+      "reactivate":"reactivate"
+      },
+      "id":0
+    }]
+}

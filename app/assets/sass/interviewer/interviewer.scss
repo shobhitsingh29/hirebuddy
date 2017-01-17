@@ -1,0 +1,116 @@
+#admin-interviewer{
+  .input-group{
+    display:inline-block;
+  }
+  .custom-width-1{
+    outline:0;
+  }
+  .width-1 > a {
+    color:$nitro-base-dark-blue-color;
+  }
+  aside{
+    float:right;
+    margin-bottom: 10px;
+    margin-top: 23px;
+    a{
+      padding:0 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover{
+        color:$nitro-base-dark-blue-color;
+      }
+      &:active{
+        color:$nitro-base-red-color;
+      }
+    }
+
+  }
+}
+
+
+
+#popup-content{
+  %extend_1 {                                                 // @extend-elements original selectors .employee-details input, .employee-details label
+    margin: 10px 3px;
+    border: 0;
+    outline: 0;
+    padding-left: 5px;
+  }
+
+
+  %extend_inputfield_button_group {                           // for group of input field and AddInterviewer button
+    border: 0;
+    padding:8px;
+    height: 40px;
+    text-align: center;
+    outline:0;
+    border-bottom: 2px solid $nitro-base-black-color;
+  }
+
+  h2{
+    margin-left:5% ;
+    color:$nitro-base-red-color;
+  }
+
+
+  .error {
+    color: $nitro-base-red-color;
+  }
+
+  div.right-align{
+    float:right;
+    margin-top:10px;
+  }
+
+  #oracle-ID {
+    @extend %extend_inputfield_button_group;
+  }
+  #submit-oracleId {
+    @extend %extend_inputfield_button_group;
+    background: $nitro-base-black-color;
+    color: $nitro-base-white-color;
+  }
+
+
+  input[disabled]{
+    background-color:$input_fields_color;
+  }
+
+
+  .display-pic {
+    width: 100%;
+  }
+
+  .employee-details {
+    input {
+      @extend %extend_1;                                  // for .employee-details input
+      width: 35%;
+    }
+    label {                                                 // for .employee-details label
+      @extend %extend_1;
+      width:35%;
+    }
+  }
+
+
+
+  #emp-name {
+    margin: 15px 0;
+    border: 0;
+    color: $nitro-base-black-color;
+  }
+
+  .interviewer-submit {
+    margin: 10px 4% 0 40%;
+    border: 0;
+    outline: 0;
+    color: $nitro-base-red-color;
+    background-color: $nitro-base-white-color;
+  }
+  fieldset{
+    border:0;
+    margin:0;
+    padding:0;
+  }
+}
+       

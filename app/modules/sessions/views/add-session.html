@@ -1,0 +1,87 @@
+<section class="create-session" ng-controller='AddSessionCtrl'>
+    <h2 class="session-form-heading">Add Session</h2>
+
+    <form name="sessionForm" method="post" novalidate ng-submit='addSession()'>
+        <div class="row">
+            <div class="form-group">
+                <label for="candidate-name">Candidate Name</label>
+                <input type="text" required id="candidate-name" name="candidateName" ng-model='candidateName'/>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="abc@sapient.com" required id="email" name="email" ng-model='email'
+                       ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@sapient.com$/"/>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" required id="phone" name="phone" maxlength="10" ng-model="phone"/>
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <select name="title" id="title" value="seniorAssociate" ng-model='title'>
+                    <option value="associate">Associate</option>
+                    <option value="seniorAssociate">Senior Associate</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="recruited">RecruitedBy</label>
+                <input type="text" name="recruitedBy" id="recruited" ng-model="recruitedBy">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label for="career-stage">Career Stage</label>
+                <select name="careerStage" id="career-stage" ng-model='careerStage'>
+                    <option value="AL1">L1</option>
+                    <option value="AL1">AL1</option>
+                    <option value="SAL1">SAL1</option>
+                    <option value="SAL2">SAL2</option>
+                </select>
+            </div>
+            <div>
+                <label for="experience-year">Years of Experience</label>
+
+                <input type="number" required id="experience-year" name="years" min="0" max='20' ng-model="years"/>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label>Resume</label>
+
+                <a href="#">Download Resume</a>
+
+                <label for="resume">Resume</label>
+                <input type="file" accept=".doc,.docx,.pdf" required id="resume" name="resumeFile"/>
+
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message" ng-model="message"/>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <label class="resend-mail" for="resend-mail">Resend Mail</label>
+                <input type="checkbox" id="resend-mail">
+                <label for="send-date">Schedule to send</label>
+
+                <!-- <input id="send-date" name="sendDate" ng-model="sendDate" type='date'/> -->
+                <datepicker date-format="yyyy-MM-dd">
+                    <input type="" id="send-date" name="sendDate" ng-model="sendDate" | date : "dd/MM/YYYY" />
+                </datepicker>
+            </div>
+        </div>
+        <div>
+
+            <button type="submit" id="session-submit" class="btn btn-primary" value="SUBMIT"
+                    ng-disabled="sessionForm.$invalid">SUBMIT
+            </button>
+
+        </div>
+    </form>
+</section>

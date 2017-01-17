@@ -1,0 +1,123 @@
+{
+  "sessionsData": [
+    {
+      "isActive": true,
+      "candidateName": "Active Singh",
+      "email": "ggera@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Richa",
+      "status": "Live",
+      "appliedFor": "SAL1",
+
+      "years": 2,
+      "sendDate": "12/08/2016",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 5
+    },
+    {
+      "isActive": true,
+      "candidateName": "fgh Singh",
+      "email": "ar3pit@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Harnoor",
+      "status": "Live",
+      "appliedFor": "SAL1",
+      "years": 2,
+      "sendDate": "08/08/2016",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 4
+    },
+    {
+      "isActive": true,
+      "candidateName": "abc Singh",
+      "email": "psingh3122@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Rajat",
+      "status": "Live",
+      "appliedFor": "SAL1",
+      "years": 2,
+      "sendDate": "02/09/2016",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 1
+    },
+    {
+      "isActive": true,
+      "candidateName": "Plavika Singh",
+      "email": "plav3u@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Richa",
+      "status": "Pending",
+      "appliedFor": "SAL1",
+      "years": 2,
+      "sendDate": "02/08/2016",
+      "action": {
+        "edit": "edit"
+      },
+
+      "id": 8
+    },
+    {
+      "isActive": true,
+      "candidateName": "shobhit singh",
+      "email": "ssingh239@sapient.com",
+      "phone": "dsa",
+      "appliedFor": "l1",
+      "years": 2,
+      "sendDate": "2016-04-11T18:30:00.000Z",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 6
+    },
+    {
+      "isActive": true,
+      "candidateName": "shobhit singh",
+      "email": "ssingh239@sapient.com",
+      "phone": 8888888888,
+      "recruitedBy": "hjg",
+      "status": "Pending",
+      "appliedFor": "l1",
+      "years": 2,
+      "sendDate": "2016-03-30T18:30:00.000Z",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 7
+    },
+    {
+      "isActive": true,
+      "candidateName": "Plavika Singh",
+      "email": "plav3u@sapient.com",
+      "phone": 9835927031,
+      "status": "Pending",
+      "appliedFor": "SAL1",
+      "years": 2,
+      "sendDate": "2016-04-19T18:30:00.000Z",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 8
+    },
+    {
+      "isActive": true,
+      "candidateName": "Plavika Singh",
+      "email": "plav3u@sapient.com",
+      "phone": 9835927031,
+      "recruitedBy": "Richa",
+      "status": "Pending",
+      "appliedFor": "SAL1",
+      "years": 2,
+      "sendDate": "2016-04-05T18:30:00.000Z",
+      "action": {
+        "edit": "edit"
+      },
+      "id": 9
+    }
+  ]
+}

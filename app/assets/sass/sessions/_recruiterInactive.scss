@@ -1,0 +1,41 @@
+.main{
+
+.header-row
+{
+    font-size:15px;
+    font-family:SapientSansMedium;
+}
+
+.header-row th{
+    color:#faf9f8;
+    background-color:#00adef;
+}
+
+.header-row th,.data-row
+{
+    border: 1px solid #ddd;
+    border-left:hidden;
+    border-right:hidden;
+}
+
+.data-row
+{
+    font-size:12px;
+    font-family:SapientSansMedium;
+}
+
+tr:nth-child(odd)
+{
+   background-color:#faf9f8;
+}
+
+
+}
+
+@media (min-width: 992px){
+    .col-md-2 {
+    border: 1px solid red;
+    width: 16.66667%;
+    }
+}
+

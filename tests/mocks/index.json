@@ -1,0 +1,9 @@
+{
+    "success": true,
+    "user": {
+        "name": "Sameer Gupta",
+        "designation": "Manager",
+        "role": "SystemAdmin",
+        "token": "xxxxxxxxxxx"
+    }
+}

@@ -1,0 +1,125 @@
+.login {
+    margin:0 auto;
+    height:82vh;
+    display: table;
+    max-width: 1150px;
+    form {
+        display: table-cell;
+        vertical-align: middle;
+        max-width: 350px;
+        margin: 0 auto;
+        position: relative;
+        span{
+            position: relative;
+            float: left;
+            margin-top: 12px;
+        }
+        input {
+            background: transparent;
+            display: block;
+            border: none;
+            min-height: 30px;
+            
+            &:hover, &:focus {
+                box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .2);
+                outline: none;
+            }
+             
+            &[type=text],
+            &[type=password] {               
+                margin: 0px 0px 45px 20px;
+                border-bottom: 1px solid $color-dark;
+                padding-left: 5px;     
+                        }
+            &[type=checkbox] {
+                display: none;
+            }
+            
+            &[type=submit] {
+                @include tablet-and-up {
+                float: right;
+                width:75px;
+                box-shadow: 0 -2px 0 rgba(220,46,47, .2);
+                }
+                width:100%;
+                color: $nitro-base-white-color;
+                text-transform: uppercase;
+                margin: 5px 0 0 0;
+                padding: 5px 20px;
+                border-radius: 3px;
+                background-color: $nitro-base-red-color;
+                cursor: pointer;                
+                &:hover, &:focus {
+                    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .2);
+                }
+            }
+        }
+        .checkbox {
+            @include tablet-and-up {            
+            float: left;
+            text-align: left;
+            }
+            position: relative;
+            text-align: center;
+            label:before {
+                content: "";
+                display: inline-block;
+                position: relative;
+                margin-right: 10px;
+                width: 9px;
+                height: 9px;
+                border: transparent solid 1px;
+                outline: $color-dark solid 1px;                
+            }
+            input[type=checkbox]:checked + label:before {
+                background-color: $color-dark;
+                border: $color-light solid 1px;
+                outline: $color-dark solid 1px;
+            }
+        }
+        fieldset {
+            border: none;
+            legend {
+                text-indent: -9999px;
+                width: 0;
+            }
+        }
+        label {
+           margin-left: 2px;
+           padding-left: 0;
+           cursor: pointer;
+        }
+        div.password {
+        position: relative;
+            i {
+                right: 10px;
+                position: absolute;
+                margin-top: 12px;
+            }
+    }
+    }
+}
+
+.loginBg {
+    background: url("/assets/images/login-bg.png") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    /*display: block;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    height: 800px;
+    left: 0;
+    position: fixed;
+    right: 0;*/
+}
+
+.hide-label{
+    text-indent: -9999px;
+    position: absolute;    
+}
+.nav-burger {
+    background-color: #d3d3d3;
+    position: relative;
+    left: 330px;
+    top: -3px;
+}

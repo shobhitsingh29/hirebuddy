@@ -1,0 +1,205 @@
+{
+  "interviewerData": [
+    {
+      "isActive": true,
+      "isArchive": false,
+      "name": "Harnoor",
+      "oracleid": 117355,
+      "title": "SLA2",
+      "status": "Active",
+      "link": "Revoke Access",
+      "details": {
+        "email": "harnoor@sapient.com",
+        "levelOfCert": "SA-L2",
+        "certifiedBy": "Mukesh",
+        "cDate": "02-Jan-2016",
+        "lastInterview": "22-Jun-2016",
+        "interviewTaken": "3"
+      }
+    },
+    {
+      "isActive": true,
+      "isArchive": false,
+      "name": "Shobhit",
+      "oracleid": 117356,
+      "title": "SLA2",
+      "status": "Active",
+      "link": "Revoke Access",
+      "details": {
+        "email": "shobhit@sapient.com",
+        "levelOfCert": "SA-L2",
+        "certifiedBy": "Suresh",
+        "cDate": "12-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "4"
+      }
+    },
+    {
+      "isActive": false,
+      "isArchive": true,
+      "name": "Plavika Singh",
+      "oracleid": 117357,
+      "title": "Manager",
+      "status": "",
+      "link": "Grant Access",
+      "details": {
+        "email": "pla122@sapient.com",
+        "levelOfCert": "Manager",
+        "certifiedBy": "Rajiv",
+        "cDate": "13-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "5"
+      }
+    },
+    {
+      "isActive": true,
+      "isArchive": false,
+      "name": "Plavika Singh",
+      "oracleid": 117357,
+      "title": "Manager",
+      "status": "",
+      "link": "Revoke Access",
+      "details": {
+        "email": "pla122@sapient.com",
+        "levelOfCert": "Manager",
+        "certifiedBy": "Rajiv",
+        "cDate": "13-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "5"
+      }
+    },
+    {
+      "isActive": false,
+      "isArchive": true,
+      "name": "Plavika Singh",
+      "oracleid": 117357,
+      "title": "Manager",
+      "status": "",
+      "link": "Grant Access",
+      "details": {
+        "email": "pla122@sapient.com",
+        "levelOfCert": "Manager",
+        "certifiedBy": "Rajiv",
+        "cDate": "13-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "5"
+      }
+    },
+    {
+      "isActive": false,
+      "isArchive": true,
+      "name": "Harnoor",
+      "oracleid": 117353,
+      "title": "SLA2",
+      "status": "Active",
+      "link": "Grant Access",
+      "details": {
+        "email": "harnoor@sapient.com",
+        "levelOfCert": "SA-L2",
+        "certifiedBy": "Mukesh",
+        "cDate": "02-Jan-2016",
+        "lastInterview": "22-Jun-2016",
+        "interviewTaken": "3"
+      }
+    },
+    {
+      "isActive": false,
+      "isArchive": true,
+      "name": "Shobhit",
+      "oracleid": 117356,
+      "title": "SLA2",
+      "status": "Active",
+      "link": "Grant Access",
+      "details": {
+        "email": "shobhit@sapient.com",
+        "levelOfCert": "SA-L2",
+        "certifiedBy": "Suresh",
+        "cDate": "12-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "4"
+      }
+    },
+    {
+      "isActive": false,
+      "isArchive": true,
+      "name": "Plavika Singh",
+      "oracleid": 117357,
+      "title": "Manager",
+      "status": "",
+      "link": "Grant Access",
+      "details": {
+        "email": "pla122@sapient.com",
+        "levelOfCert": "Manager",
+        "certifiedBy": "Rajiv",
+        "cDate": "13-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "5"
+      }
+    },
+    {
+      "isActive": true,
+      "isArchive": false,
+      "name": "Ainvayi Singh",
+      "oracleid": 117357,
+      "title": "Manager",
+      "status": "",
+      "link": "Revoke Access",
+      "details": {
+        "email": "pla122@sapient.com",
+        "levelOfCert": "Manager",
+        "certifiedBy": "Rajiv",
+        "cDate": "13-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "5"
+      }
+    },
+    {
+      "isActive": true,
+      "name": "Shobhit",
+      "details": {
+        "email": "shobhit@sapient.com",
+        "levelOfCert": "SA-L2",
+        "certifiedBy": "Suresh",
+        "cDate": "12-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "4"
+      },
+      "oracleid": 117356,
+      "title": "SLA2",
+      "link": "Revoke Access",
+      "id": "3fe23610-fa0c-4912-8a01-5f004612806f"
+    },
+    {
+      "isActive": true,
+      "name": "Shobhit",
+      "details": {
+        "email": "shobhit@sapient.com",
+        "levelOfCert": "SA-L2",
+        "certifiedBy": "Suresh",
+        "cDate": "12-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "4"
+      },
+      "oracleid": 117356,
+      "title": "SLA2",
+      "link": "Revoke Access",
+      "id": "51ab08c7-ff2e-42dd-b7ab-5d969d5818ae"
+    },
+    {
+      "isActive": true,
+      "name": "Shobhit",
+      "details": {
+        "email": "shobhit@sapient.com",
+        "levelOfCert": "SA-L2",
+        "certifiedBy": "Suresh",
+        "cDate": "12-Jan-2016",
+        "lastInterview": "12-Jan-2016",
+        "interviewTaken": "4"
+      },
+      "oracleid": 117356,
+      "title": "SLA2",
+      "link": "Revoke Access",
+      "id": "ef9b447e-acbc-493d-af8e-7eabfa72cc9b"
+    }
+  ]
+}

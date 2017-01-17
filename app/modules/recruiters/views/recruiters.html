@@ -1,0 +1,80 @@
+<main class="container">
+<div ng-controller='RecruiterCtrl' ng-init="navValue = 'active';setFilter('inactive');setFilter('active')" class='sub-nav'>
+
+    <div class="grid">
+        <div class='section'>
+            <div class="input-group">
+            <label for="oracle-id" class="sr-only">Oracle ID : </label>
+            <input type="text" class="form-control" placeholder="Oracle ID" id="oracle-id">
+            <span class="input-group-btn">
+                <button class="btn btn-primary add-recruiter" type="submit">Add Recruiter</button>
+            </span>
+            </div>
+        </div>
+        <aside>
+            <a class="active-view"  title="active count for recruiters" ng-class="{activeAnchor : getFilter() === 'active'}"
+             ng-click='setFilter("active")'>active ({{activeEntries}})<span class="active-count"></span></a>
+            <a class="archive-view"   title="inactive count for recruiters"  
+            ng-class="{activeAnchor : getFilter() === 'inactive'}" ng-click='setFilter("inactive")'>inactive ({{inactiveEntries}})<span class="archive-count"></span></a>
+        </aside> 
+    </div>
+
+    <div id="table-container">
+        <table class="table" ng-if='getFilter() === "active"'>
+            <thead class='row'>
+                <tr>
+
+                    <th scope="col">Recruiter Name</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Added By</th>
+                    <th scope="col">Added On</th>
+                    <th scope="col">Action</th>
+                </tr>    
+            </thead>
+
+            <tbody>
+                <tr ng-repeat='recruiter in recruiter.recruiterData'>
+
+                    <td >{{recruiter.recruiterName}}</td>
+                    <td >{{recruiter.designation}}</td>
+                    <td >{{recruiter.addedBy}}</td>
+                    <td >{{recruiter.addedOn}}</td>
+                    <td><a   class="nitro-icon-sprite icon-view"
+                           pop-up data='recruiter'
+                           url="/modules/recruiters/views/recruiter-info-popup.html" title="view active recruiter details"></a>
+                        <a href="#"  title="send active recruiter to inactive list"  class="nitro-icon-sprite icon-archive"></a></td>
+
+
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-container" ng-if='getFilter() === "inactive"'>
+            <thead>
+
+                <th>Recruiter Name</th>
+                <th  >Designation</th>
+                <th  >Added By</th>
+                <th  >Added On</th>
+                <th  >Action</th>
+
+            </thead>
+
+            <tbody>
+                <tr ng-repeat='recruiter in recruiter.recruiterData'>
+
+                    <td >{{recruiter.recruiterName}}</td>
+                    <td >{{recruiter.designation}}</td>
+                    <td >{{recruiter.addedBy}}</td>
+                    <td >{{recruiter.addedOn}}</td>
+                    <td><a   class="nitro-icon-sprite icon-view"
+                             pop-up data='recruiter'
+                             url="/modules/recruiters/views/recruiter-info-popup.html" title="view active recruiter details"></a>
+                        <a href="#"  title="send active recruiter to inactive list"  class="nitro-icon-sprite icon-archive"></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</main>

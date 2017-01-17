@@ -1,0 +1,22 @@
+/*Breakpoints
+=============================================================================*/
+@mixin mobile-only {
+	@media (max-width : $screen-tablet-1) {
+		@content;
+	}
+}
+@mixin tablet-only {
+	@media only screen and (min-width : $screen-tablet) and (max-width : $screen-desktop-1) {
+		@content;
+	}
+}
+@mixin tablet-and-up {
+	@media only screen and (min-width : $screen-tablet) {
+		@content;
+	}
+}
+@mixin desktop-only {
+	@media only screen and (min-width : $screen-desktop) and (max-width : $screen-lg-desktop-1) {
+		@content;
+	}
+}

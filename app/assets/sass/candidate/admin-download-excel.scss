@@ -1,0 +1,39 @@
+
+$redColor: #dc2e2f;
+
+.excel-container
+{
+   font-size: 12px;
+   color:$redColor;
+   font-family: SapientSansMedium;
+}
+
+.click-download
+{
+    border:1px solid black;
+    border-style:none;
+    border-left:solid;
+    color:black;
+}
+
+.download-button
+{
+    color:$redColor;
+}
+
+#download{
+    color:$redColor;
+    display:inline-block;
+    margin-left:5px;
+    margin-top:2px;
+}
+
+.inside-popup
+{
+    display:none;
+}
+
+ .input-date
+ {
+     display:inline-block;
+ }
